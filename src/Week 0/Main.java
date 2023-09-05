@@ -15,6 +15,6 @@ public class Main {
         }
 
         System.out.println("Demo for CSIT 111");
-        System.out.println(5/3);
+//        System.out.println(5/3);
     }
 }
