@@ -11,6 +11,8 @@ public class Countdown
     //-----------------------------------------------------------------
     public static void main(String[] args)
     {
+        String str = "This is a string literal";
+        System.out.println(str);
         System.out.print("Three... ");
         System.out.print("Two... ");
         System.out.print("One... ");

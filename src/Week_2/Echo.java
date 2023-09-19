@@ -1,4 +1,3 @@
-package Week_2;
 //********************************************************************
 //  Echo.java       Author: Lewis/Loftus
 //
@@ -17,11 +16,10 @@ public class Echo
     {
         String message;
         Scanner scan = new Scanner(System.in);
-
         System.out.println("Enter a line of text:");
-
         message = scan.nextLine();
-
         System.out.println("You entered: \"" + message + "\"");
+        int nextNumber = scan.nextInt();
+        System.out.println("You entered: " + nextNumber);
     }
 }

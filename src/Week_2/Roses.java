@@ -15,5 +15,13 @@ public class Roses
             "Sugar is sweet,\n\tBut I have \"commitment issues\",\n\t" +
             "So I'd rather just be friends\n\tAt this point in our " +
             "relationship.");
+
+        System.out.println("\"Hello\"" + "'there' \'char\'");
+        char achar = '\"';
+        System.out.println(achar);
+
+        System.out.println("\"Thank you all for coming to my home\ntonight,\" he said " +
+                "mysteriously.");
+
     }
 }

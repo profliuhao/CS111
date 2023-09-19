@@ -39,5 +39,25 @@ public class RandomNumbers
         num2 = generator.nextFloat() * 6;  // 0.0 to 5.999999
         num1 = (int)num2 + 1;
         System.out.println("From 1 to 6: " + num1);
+
+
+
+        // Create a Random object with a specific seed (e.g., 123)
+        Random random1 = new Random(123);
+
+        // Generate random numbers using random1
+        System.out.println("Random numbers with seed 123:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(random1.nextInt(100)); // Generate random integer between 0 and 99
+        }
+
+        // Create another Random object with the same seed (123)
+        Random random2 = new Random(123);
+
+        // Generate random numbers using random2
+        System.out.println("\\nRandom numbers with the same seed 123 (should be the same as above):");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(random2.nextInt(100)); // Generate random integer between 0 and 99
+        }
     }
 }
