@@ -6,7 +6,6 @@ package Week_3;//***************************************************************
 //********************************************************************
 
 import java.util.Random;
-
 public class RandomNumbers
 {
     //-----------------------------------------------------------------
@@ -37,13 +36,14 @@ public class RandomNumbers
         System.out.println("A random float (between 0-1): " + num2);
 
         num2 = generator.nextFloat() * 6;  // 0.0 to 5.999999
+        System.out.println("num2 = " + num2);
         num1 = (int)num2 + 1;
         System.out.println("From 1 to 6: " + num1);
 
 
 
         // Create a Random object with a specific seed (e.g., 123)
-        Random random1 = new Random(123);
+        Random random1 = new Random(321);
 
         // Generate random numbers using random1
         System.out.println("Random numbers with seed 123:");
@@ -52,7 +52,7 @@ public class RandomNumbers
         }
 
         // Create another Random object with the same seed (123)
-        Random random2 = new Random(123);
+        Random random2 = new Random(321);
 
         // Generate random numbers using random2
         System.out.println("\\nRandom numbers with the same seed 123 (should be the same as above):");
