@@ -1,4 +1,4 @@
-//********************************************************************
+package Week_4;//********************************************************************
 //  RollingDice.java       Author: Lewis/Loftus
 //
 //  Demonstrates the creation and use of a user-defined class.

@@ -5,6 +5,7 @@ package Week_3;//***************************************************************
 //  DecimalFormat class.
 //********************************************************************
 
+import java.math.RoundingMode;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -29,7 +30,10 @@ public class CircleStats
 
         // Round the output to three decimal places
         DecimalFormat fmt = new DecimalFormat("0.###");
+//        fmt.setRoundingMode(RoundingMode.DOWN);
 
+
+        System.out.println("The circle's area (without formatting): " + area);
         System.out.println("The circle's area: " + fmt.format(area));
         System.out.println("The circle's circumference: "
                 + fmt.format(circumference));

@@ -34,5 +34,10 @@ public class IceCream
         System.out.println("cone3 value: " + cone3);
         System.out.println("cone3 ordinal: " + cone3.ordinal());
         System.out.println("cone3 name: " + cone3.name());
+
+        int amx = Integer.MAX_VALUE;
+        System.out.println("amx = " + amx);
+        int amin = Integer.MIN_VALUE;
+        System.out.println("amx = " + amin);
     }
 }
