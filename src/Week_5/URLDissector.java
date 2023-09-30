@@ -18,7 +18,7 @@ public class URLDissector
         String url;
         Scanner fileScan, urlScan;
 
-        fileScan = new Scanner(new File("urls.inp"));
+        fileScan = new Scanner(new File("src/Week_5/urls.inp"));
 
         // Read and process each line of the file
         while (fileScan.hasNext())
