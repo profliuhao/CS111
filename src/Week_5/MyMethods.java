@@ -29,11 +29,11 @@ public class MyMethods
    //-----------------------------------------------------------------
    //  write the comboDie methods.
    //-----------------------------------------------------------------
-    public Die comboDie(Die die1, Die die2){
-        Die newDie = new Die();
-        newDie.setColor(die1.getColor()+die2.getColor());
-
-        return newDie;
-    }
+//    public Die comboDie(Die die1, Die die2){
+//        Die newDie = new Die();
+//        newDie.setColor(die1.getColor()+die2.getColor());
+//
+//        return newDie;
+//    }
      
 }

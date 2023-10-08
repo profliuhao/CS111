@@ -52,8 +52,8 @@ public class TestMyMethod {
         System.out.println();
 
         //Create two new objects of the Die class.
-        Die dice1 = new Die();
-        Die dice2 = new Die();
+//        Die dice1 = new Die();
+//        Die dice2 = new Die();
 
         //Create an object of the class PairOfDice.
 
