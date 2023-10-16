@@ -22,8 +22,10 @@ public class Age
 
         System.out.println("You entered: " + age);
 
-        if (age < MINOR)
+        if (age < MINOR){
+            System.out.println("You are very young");
             System.out.println("Youth is a wonderful thing. Enjoy.");
+        }
 
         System.out.println("Age is a state of mind.");
     }

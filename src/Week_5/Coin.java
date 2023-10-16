@@ -3,6 +3,7 @@
 //
 //  Represents a coin with two sides that can be flipped.
 //********************************************************************
+package Week_5;
 
 public class Coin
 {
@@ -48,5 +49,16 @@ public class Coin
             faceName = "Tails";
 
         return faceName;
+    }
+
+    public int getFace(){
+        return face;
+    }
+
+    public boolean equals(Coin anotherCoin) {
+      if (face==anotherCoin.getFace())
+          return true;
+      else
+          return false;
     }
 }

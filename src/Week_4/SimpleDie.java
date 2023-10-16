@@ -45,9 +45,12 @@ public class SimpleDie {
     }
 
     public int compareTo(SimpleDie sd2) {
-        if(faceValue>sd2.getFaceValue()) return 1;
-        else if (faceValue== sd2.getFaceValue()) return 0;
-        else return -1;
+        if (faceValue > sd2.getFaceValue()) {
+            return 1;
+        } else if (faceValue == sd2.getFaceValue()) {
+            return 0;
+        } else {
+            return -1;}
     }
 
     public String getColor(){

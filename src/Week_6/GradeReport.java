@@ -28,9 +28,11 @@ public class GradeReport
         {
         case 10:
             System.out.println("a perfect score. Well done.");
+            System.out.println("Congratulations!");
             break;
         case 9:
             System.out.println("well above average. Excellent.");
+            System.out.println("almost perfect!");
             break;
         case 8:
             System.out.println("above average. Nice job.");

@@ -14,6 +14,14 @@ public class MinOfThree
     //-----------------------------------------------------------------
     public static void main(String[] args)
     {
+
+        int count = 1;
+        while (count <= 5)
+        {
+            System.out.println(count);
+            count++;
+        }
+
         int num1, num2, num3, min = 0;
 
         Scanner scan = new Scanner(System.in);

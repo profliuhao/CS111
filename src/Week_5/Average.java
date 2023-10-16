@@ -28,7 +28,7 @@ public class Average
         {
             count++;
 
-            sum += value;
+            sum = sum + value;
             System.out.println("The sum so far is " + sum);
 
             System.out.print("Enter an integer (0 to quit): ");
