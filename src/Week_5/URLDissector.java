@@ -16,6 +16,8 @@ public class URLDissector
     public static void main(String[] args) throws IOException
     {
         String url;
+
+        Scanner scann = new Scanner(System.in);
         Scanner fileScan, urlScan;
 
         fileScan = new Scanner(new File("src/Week_5/urls.inp"));

@@ -1,3 +1,5 @@
+package Week_6;
+
 import java.util.*;
 public class TestBooks
 {
@@ -7,6 +9,34 @@ public class TestBooks
       Book mybook1 = new Book(56, "Harry Portter part 1");
       Book mybook2 = new Book(67, "Harry Portter part 2");
       Book mybook3 = new Book(56, "Harry Portter part 1");
+      Book mybook4 = new Book(189, "Harry Portter part 3");
+
+      ArrayList<Book> books = new ArrayList<Book>();
+      if(books.isEmpty()){
+         System.out.println("The book list is empty");
+      }else{
+         System.out.println("The book list is not empty");
+      }
+
+      books.add(mybook1);
+      books.add(mybook2);
+      books.add(mybook3);
+      books.add(mybook4);
+
+      int index=0;
+      while(index < books.size()){
+         Book tempBook = books.get(index);
+         System.out.println(tempBook.getTitle() + "\t" + tempBook.getPages());
+         index++;
+      }
+
+      if(books.isEmpty()){
+         System.out.println("The book list is empty");
+      }else{
+         System.out.println("The book list is not empty");
+      }
+
+      System.out.println("books.get(0) = " + books.get(0).toString());
 
       if(mybook1.compareTo(mybook2)>0){
          System.out.println("mybook1 has more pages");
@@ -42,8 +72,8 @@ public class TestBooks
 //      numBooks = scan.nextInt();
 //
 //      ArrayList<Book> books = new ArrayList<Book>();
-//
-//      // for loop to get each book's pages and title
+
+      // for loop to get each book's pages and title
 //      for (int i = 0; i < numBooks; i++)
 //      {
 //         System.out.print("How many pages are in book " + (i+1) + "? ");

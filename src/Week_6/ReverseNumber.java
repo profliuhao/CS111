@@ -15,6 +15,15 @@ public class ReverseNumber
     {
         int number, lastDigit, reverse = 0;
 
+
+        int count = 0;
+        do
+        {
+            count++;
+            System.out.println(count);
+        } while (count < 5);
+
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter a positive integer: ");
@@ -22,12 +31,21 @@ public class ReverseNumber
 
         do
         {
-            lastDigit = number % 10;
-            reverse = (reverse * 10) + lastDigit;
+            System.out.println("number = " + number);
             number = number / 10;
+            System.out.println("now divide this number by 10 " );
         }
         while (number > 0);
 
-        System.out.println("That number reversed is " + reverse);
+
+//        do
+//        {
+//            lastDigit = number % 10;
+//            reverse = (reverse * 10) + lastDigit;
+//            number = number / 10;
+//        }
+//        while (number > 0);
+
+//        System.out.println("That number reversed is " + reverse);
     }
 }

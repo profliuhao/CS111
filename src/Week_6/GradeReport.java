@@ -17,6 +17,22 @@ public class GradeReport
 
         Scanner scan = new Scanner(System.in);
 
+        System.out.print("Enter a numeric number (1 to 15): ");
+        int mynumber = scan.nextInt();
+
+        switch (mynumber%10){
+            case 1:
+                System.out.println("the reminder is 1");
+                break;
+            case 2:
+                System.out.println("the reminder is 2");
+                break;
+            case 5:
+                System.out.println("the reminder is 5");
+                break;
+        }
+        System.out.println("we are done here");
+
         System.out.print("Enter a numeric grade (0 to 100): ");
         grade = scan.nextInt();
 

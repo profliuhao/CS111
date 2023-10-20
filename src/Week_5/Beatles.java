@@ -22,7 +22,7 @@ public class Beatles
 
         System.out.println(band);
         int location = band.indexOf("Pete");
-        band.remove(location);
+//        band.remove(location);
 
         System.out.println(band);
         System.out.println("At index 1: " + band.get(1));
