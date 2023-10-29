@@ -30,6 +30,8 @@ public class GradeReport
             case 5:
                 System.out.println("the reminder is 5");
                 break;
+            default:
+                System.out.println("No match");
         }
         System.out.println("we are done here");
 

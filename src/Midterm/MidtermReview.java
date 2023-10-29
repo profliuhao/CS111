@@ -6,6 +6,9 @@ public class MidtermReview {
 
         System.out.println((int)(76.0252175 * 100) / 100.0);
 
+        String astr = "this is a str";
+        String bstr = "this is a str";
+        astr.equals(bstr);
 
         int a = 4, b =10;
         if (a >0)
