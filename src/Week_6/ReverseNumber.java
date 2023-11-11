@@ -17,11 +17,16 @@ public class ReverseNumber
 
 
         int count = 0;
-        do
-        {
+//        do
+//        {
+//            count++;
+//            System.out.println(count);
+//        } while (count < 5);
+
+        while(count>5){
             count++;
             System.out.println(count);
-        } while (count < 5);
+        }
 
 
         Scanner scan = new Scanner(System.in);

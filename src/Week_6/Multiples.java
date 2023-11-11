@@ -14,6 +14,20 @@ public class Multiples
     //-----------------------------------------------------------------
     public static void main(String[] args)
     {
+        int num1, num2, num3;
+        num1 = -5;
+        num2 = -3;
+        num3 = 8;
+
+        if (num1>num2){
+            System.out.println("the larger number is " + num1);
+        }else{
+            System.out.println("the larger number is " + num2);
+        }
+
+        int larger =  (num1+3 > num2) ? (num1+5) : (num3-num2);
+        System.out.println("the larger number is " + larger);
+
         for (int i = 0; i < 10; i++ ){
             System.out.println("i = " + i);
         }

@@ -1,19 +1,37 @@
 package Week_6;
 
 // Define a class named Book
-public class Book
+public class Book implements Comparable<Book>
 {
    // Data fields
    private int pages;
    private String title;
+
+   private static int count;
    
    // Constructor to initialize pages and title
+
+   public Book(){
+      pages = 0;
+      title = "";
+      count++;
+   }
    public Book(int p, String t)
    {
       pages = p;
       title = t;
+      count++;
+   }
+   public Book(String t){
+      title = t;
+      pages = 100;  //set default = 100
+      count++;
    }
 
+   public static int getCount(){
+
+      return count;
+   }
    
    // setter for pages
    // fill in here
@@ -52,7 +70,8 @@ public class Book
       }
     }
     // a compareTo method that compares two books
-    public int compareTo(Book anotherBook)
+   @Override
+   public int compareTo(Book anotherBook)
     {
        // if book1 has more pages than anotherbook, return 1
        if (pages > anotherBook.getPages()){

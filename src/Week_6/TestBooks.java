@@ -6,10 +6,21 @@ public class TestBooks
    public static void main(String[] args)
    {
 
-      Book mybook1 = new Book(56, "Harry Portter part 1");
+      Book testbook = new Book();
+      Book testbook2 = new Book("Happy porter part 7");
+
+      Book mybook1 = new Book(156, "Harry Portter part 1");
       Book mybook2 = new Book(67, "Harry Portter part 2");
-      Book mybook3 = new Book(56, "Harry Portter part 1");
+      Book mybook3 = new Book(156, "Harry Portter part 1");
       Book mybook4 = new Book(189, "Harry Portter part 3");
+
+      System.out.println("Book.getCount() = " + Book.getCount());
+
+      mybook1.getPages();
+      mybook1.getTitle();
+      int result = Math.abs(-5);
+
+
 
       ArrayList<Book> books = new ArrayList<Book>();
       if(books.isEmpty()){
@@ -29,6 +40,20 @@ public class TestBooks
          System.out.println(tempBook.getTitle() + "\t" + tempBook.getPages());
          index++;
       }
+
+      for(int num =0 ; num<books.size(); num++){
+         Book abook = books.get(num);
+         System.out.println("abook = " + abook);
+      }
+
+      Collections.sort(books);
+
+
+      for (Book myBook : books)
+         System.out.println(myBook);
+
+
+
 
       if(books.isEmpty()){
          System.out.println("The book list is empty");
