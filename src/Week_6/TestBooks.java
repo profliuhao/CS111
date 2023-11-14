@@ -9,10 +9,15 @@ public class TestBooks
       Book testbook = new Book();
       Book testbook2 = new Book("Happy porter part 7");
 
+      System.out.println("testbook = " + testbook);
+      System.out.println("testbook2 = " + testbook2);
+
       Book mybook1 = new Book(156, "Harry Portter part 1");
       Book mybook2 = new Book(67, "Harry Portter part 2");
       Book mybook3 = new Book(156, "Harry Portter part 1");
       Book mybook4 = new Book(189, "Harry Portter part 3");
+
+
 
       System.out.println("Book.getCount() = " + Book.getCount());
 

@@ -16,10 +16,10 @@ public class Book implements Comparable<Book>
       title = "";
       count++;
    }
-   public Book(int p, String t)
+   public Book(int pages, String title)
    {
-      pages = p;
-      title = t;
+      this.pages = pages;
+      this.title = title;
       count++;
    }
    public Book(String t){
