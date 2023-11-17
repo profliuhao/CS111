@@ -21,9 +21,14 @@ public class BasicArray
             list[index] = index * MULTIPLE;
 
         list[5] = 999;  // change one array value
+        list[0] = 25;
+        list[list.length-1] = 1999;
 
         //  Print the array values
         for (int value : list)
             System.out.print(value + "  ");
+
+        for (int index = LIMIT-1; index >= 0; index--)
+            list[index] = index * MULTIPLE;
     }
 }
