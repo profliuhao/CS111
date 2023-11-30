@@ -21,5 +21,10 @@ public class Words
 
         System.out.println("Definitions per page: " +
                            webster.computeRatio());
+
+        MyDictionary mydict = new MyDictionary("Testing New Name");
+        System.out.println("mydict.printMyDict() = " + mydict.printMyDict());
+        System.out.println("mydict.getDefinitions() = " + mydict.getDefinitions());
+        System.out.println("mydict.getPages() = " + mydict.getPages());
     }
 }
