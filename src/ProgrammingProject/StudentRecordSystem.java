@@ -27,6 +27,7 @@ public class StudentRecordSystem {
             // Get address information
             // (You can reuse the Address class and create an Address object)
             System.out.print("Enter student's address: ");
+            String addr = scanner.nextLine();
             Address address = new Address("", "", "", 10000);
 
             System.out.print("Enter student's name: ");
@@ -35,7 +36,6 @@ public class StudentRecordSystem {
             // Create a new student
             activeStudent = new Student(age, gender, address, studentIDInput, studentName);
         }
-
 
         while (true) {
             System.out.println("Menu:");
